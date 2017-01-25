@@ -9,6 +9,14 @@ body {
 .projects{
 	background-image: url("../images/background2.jpg");
 }
+.contactMe{
+	background-image: url("../images/background3.png")
+}
+#side-nav-bar{
+	width: 220px;
+	background-color: transparent;
+}
+
 /*#aboutMeTxt{
 	position:absolute;
 	top: 50%;
