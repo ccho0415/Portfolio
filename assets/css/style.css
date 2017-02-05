@@ -1,29 +1,6 @@
-#home-side-nav-bar{
-	color: #4aaaa5;
+body { 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
-body {
-}
-.aboutMe{
-	background-image: url("../images/background1.jpg")
-}
-.projects{
-	background-image: url("../images/background2.jpg");
-}
-/*#aboutMeTxt{
-	position:absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	font-size: 25px;
-}
-#projects{
-	opacity: 0.8;
-}
-#projectsTitle{
-	color: white;
-	position:absolute;
-	top: 200%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	font-size: 25px;
-}*/
