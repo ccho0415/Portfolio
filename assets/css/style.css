@@ -4,3 +4,69 @@ body {
   -o-background-size: cover;
   background-size: cover;
 }
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.projectSlide {
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    max-height: 100%;
+    max-width: 100%;
+}
+#navbar{
+	width:100%;
+	height: 50px;
+	top: 0px;
+	position: absolute;
+	z-index: 999;
+	background-color: #1d2c5d;
+	opacity: 0.8; 
+}
+.dropdown{
+	float:left;
+}
+
+.red{
+    color:red;
+    }
+.form-area
+{
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  background-color: #FAFAFA;
+	padding: 10px 40px 60px;
+	margin: 10px 0px 60px;
+	border: 1px solid GREY;
+  transform: translate(-50%, -50%);	
+}
+#gitHub{
+  position: fixed;
+  left: 40%;
+  top: 40%;
+  float:left;
+  transform: translate(-50%, -50%); 
+  margin-left: 50px;
+}
+#linkedIn{
+  position: fixed;
+  left: 60%;
+  top: 60%;
+  float:left;
+  transform: translate(-50%, -50%); 
+  margin-left: 50px;
+}
+#profilePic{
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);   
+}
+#profileText{
+  position: fixed;
+  left: 45%;
+  top: 10%;
+}
