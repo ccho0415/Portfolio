@@ -3,20 +3,103 @@
 <head>
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">	
 	<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body class = "">
 <div id ="linksClick">
 	<img src="assets/images/background.png" width="1920px" height="1200px" alt="background" usemap="#linksMap">
 	<map name="linksMap">
-    	<area shape="rect" coords="269.3, 995.5, 397.7, 1169.7" href="projects.html" alt="projectsLink">
-    	<area shape="rect" coords="294.4, 409.6, 446.4, 546.9" href="connect.html" alt="connectLink">
-    	<area shape="rect" coords="1569.5, 938.0, 1796.8, 1194.8" href="contact.html" alt="contactLink">
-     <area shape="rect" coords="706.2, 529.2, 1058.9, 970.4" href="about.html" alt="aboutLink">           
+    	<area shape="rect" coords="269.3, 995.5, 397.7, 1169.7" data-toggle="modal" data-target="#projectModal" alt="projectsModal">
+    	<area shape="rect" coords="294.4, 409.6, 446.4, 546.9" data-toggle="modal" data-target="#connectModal" alt="connectModal">
+    	<area shape="rect" coords="1569.5, 938.0, 1796.8, 1194.8" data-toggle="modal" data-target="#contactModal" alt="contactModal">
+     	<area shape="rect" coords="706.2, 529.2, 1058.9, 970.4" data-toggle="modal" data-target="#aboutModal" alt="aboutModal">           
 	</map>
+</div>
+
+<!-- Project Modal -->
+<div class="modal fade" id="projectModal" tabindex="-1" role="dialog" aria-labelledby="projectModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="projectModalLabel">Projects</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Connect Modal -->
+<div class="modal fade" id="connectModal" tabindex="-1" role="dialog" aria-labelledby="connectModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">		
+        <nav class="modal-title" id="connectModalLabel" id ="navbar">
+   		<div class="navbar-header">
+      		<a href= "connect.html" class="navbar-brand">Connect</a>
+    	</div>
+		<ul class="nav navbar-nav navbar-right">
+    		<li><a href="index.html">Home</a></li>
+    		<li><a href="projects.html">Projects</a></li>    
+    		<li><a href="about.html">About Me</a></li>
+    		<li><a href="contact.html">Contact Me</a></li>
+		</ul>	
+		</nav>
+      </div>
+      <div class="modal-body" id="connectModalBody">
+		<a href="https://github.com/ccho0415" id ="gitHub">
+		<img src="assets/images/Octocat.png" height="200" width="250">	
+		</a>
+		<a href ="https://www.linkedin.com/in/christine-chong-b4533b12a" id="linkedIn">
+		<img src="assets/images/LinkedIn.png" height="150" width="150">	
+		</a>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+    </div>
+  </div>
+<div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="aboutModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="aboutModalLabel">About Me</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="contactModalLabel">Contact</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
 </div>
 </body>
 <script type="text/javascript" src = "assets/javascript/index.js"></script>
+<script type="text/javascript" src = "assets/javascript/bootstrap.js"></script>
 </html>
