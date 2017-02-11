@@ -15,6 +15,7 @@ $(document).ready(function(){
             $('#characterLeft').removeClass('red');            
         }
     }); 
+    $("#wrapper").fullpage();    
     // $('img[usemap]').rwdImageMaps();
         
 });
