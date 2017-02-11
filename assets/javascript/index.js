@@ -14,8 +14,7 @@ $(document).ready(function(){
             $('#btnSubmit').removeClass('disabled');
             $('#characterLeft').removeClass('red');            
         }
-    }); 
-    $("#wrapper").fullpage();    
+    });    
     // $('img[usemap]').rwdImageMaps();
         
 });
