@@ -1,8 +1,9 @@
-body { 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+body {
+/*    background: url(../images/background.png) no-repeat fixed;*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 html, body {
     height: 100%;
@@ -35,6 +36,14 @@ html, body {
 	border: 1px solid GREY;
   transform: translate(-50%, -50%);	
 }
+.form-modal
+{
+  padding: 10px 40px 60px;
+  margin: 10px 30px 60px;
+  border: 1px solid GREY;
+  position: relative;
+  background-color: #FAFAFA;
+}
 #gitHub{
   position: fixed;
   left: 40%;
@@ -65,13 +74,18 @@ html, body {
 .modal-content{
   background-color: white;
   border-style: solid;
-  border-color: blue;
+  border-width: 2px;
+  border-color: black;
 }
 .modal-header{
   background-color: #1d2c5d;
   opacity: 0.8; 
 }
 #connectModalBody{
+  height: 500px;
+  width: 500px;
+}
+#contactModalBody{
   height: 500px;
   width: 500px;
 }
