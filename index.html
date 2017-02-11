@@ -22,18 +22,49 @@
 <!-- Project Modal -->
 <div class="modal fade" id="projectModal" tabindex="-1" role="dialog" aria-labelledby="projectModalLabel">
   <div class="modal-dialog" role="document">
-    <div class="modal-content">
+    <div class="modal-content" id="projectModal">
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="projectModalLabel">Projects</h4>
+<nav class="modal-title" id="projectModalLabel" id ="navbar projectModalNavbar">
+   <div class="navbar-header">
+      <a class="navbar-brand" href="projects.html">Projects</a>
+    </div>
+<div class ="container-fluid">
+<ul class ="nav navbar-nav">
+  <li class ="dropdown">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Fire Emblem Heroes<span class="caret"></span></a>
+    <ul class="dropdown-menu">
+      <li><a href="http://feheroes.wiki/Main_Page">Main Page</a></li>   
+    </ul>
+  </li>
+  <li class ="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cobra Fighters <span class="caret"></span></a>
+    <ul class="dropdown-menu">
+      <li><a href="https://github.com/KristenManning/homepage">GitHub</a></li>
+    </ul>   
+  </li>
+  <li class ="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown">LIRI <span class="caret"></span></a>
+    <ul class="dropdown-menu">
+      <li><a href="https://github.com/ccho0415/LIRI">GitHub</a></li>
+    </ul>
+  </li> 
+</ul>
+<ul class="nav navbar-nav navbar-right">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About Me</a></li>
+    <li><a href="contact.html">Contact Me</a></li>
+    <li><a href="connect.html">Connect</a></li>
+</ul> 
+</div>
+</nav>
       </div>
       <div class="modal-body">
         ...
       </div>
+        </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
       </div>
-    </div>
   </div>
 </div>
 <!-- Connect Modal -->
@@ -72,16 +103,30 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="aboutModalLabel">About Me</h4>
+        
+        <nav  class="modal-title" id= "contactModalLabel" id ="navbar">
+   <div class="navbar-header">
+      <a class="navbar-brand" href="about.html">About Me</a>
+    </div>
+<div class ="container-fluid">
+<ul class="nav navbar-nav navbar-right">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="contact.html">Contact Me</a></li>
+    <li><a href="connect.html">Connect</a></li>
+</ul> 
+</div>
+</nav>
       </div>
       <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+  <img src="assets/images/profile.jpg" id="profilePicModal">
+<p id="profileTextModal">Hi! I'm an English Major that can't write! :)</p>
       </div>
     </div>
+      <div class="modal-footer">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+
   </div>
 </div>
 <!-- Contact Modal -->
