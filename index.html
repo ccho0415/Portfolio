@@ -10,7 +10,7 @@
 </head>
 <body class = "">
 <div id ="linksClick">
-	<img src="assets/images/background.png" alt="background" usemap="#linksMap">
+	<img class="bg" src="assets/images/background.png" alt="background" usemap="#linksMap">
 	<map name="linksMap">
     	<area shape="rect" coords="269.3, 995.5, 397.7, 1169.7" data-toggle="modal" data-target="#projectModal" alt="projectsModal">
     	<area shape="rect" coords="294.4, 409.6, 446.4, 546.9" data-toggle="modal" data-target="#connectModal" alt="connectModal">
@@ -21,8 +21,8 @@
 
 <!-- Project Modal -->
 <div class="modal fade" id="projectModal" tabindex="-1" role="dialog" aria-labelledby="projectModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content" id="projectModal">
+  <div class="project-modal-dialog" role="document">
+    <div class="project-modal-content" id="projectModal">
       <div class="modal-header">
         <nav class="modal-title" id="projectModalLabel" id ="navbar projectModalNavbar">
           <div class="navbar-header">
@@ -181,5 +181,10 @@
 </body>
 <script type="text/javascript" src = "assets/javascript/index.js"></script>
 <script type="text/javascript" src = "assets/javascript/bootstrap.js"></script>
-<script type="text/javascript" src = "assets/javascript/jquery.rwdImageMaps.js"></script>
+<script src="assets/javascript/imageMapResizer.min.js"></script>  
+<script>
+$(document).ready(function() {
+    $('map').imageMapResize();
+});
+</script>
 </html>
